@@ -6,10 +6,7 @@ const OfferList = ({ offers, edit, deleteOffer }) => {
 
     return (<div className="list">
 
-        {offers.map((offer) => {
-
-            return <OfferItem key={offer.id} offer={offer} edit={edit} deleteOffer={deleteOffer} />
-        })}
+        {offers.map((offer) => <OfferItem key={offer.id} offer={offer} edit={edit} deleteOffer={deleteOffer} />)}
 
     </div>);
 
